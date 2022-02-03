@@ -1,0 +1,281 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#header{
+    background-image: url("../Images/Burger.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /*position: relative;*/
+}
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 3em;
+    color:#b7e069;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.navlinks ul li{
+    display: inline;  
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:rgb(16, 90, 49);
+}
+
+.navlinks ul li a:hover{
+    color:brown;
+    border-bottom: 1px solid #311f77;
+}
+.box{
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color:rgb(247, 151, 27);
+}
+.box h1{
+    font-size: 3em;
+    color:rgb(16, 90, 49);
+}
+.box p{
+    font-size: 1.2em;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    background:rgb(202, 198, 198);
+    padding:5px 20px;
+    display:inline-block;
+    position:relative;
+    top:10px;
+    color:brown;
+    border-radius: 10px;
+}
+.btn:hover{
+    letter-spacing: 5px;
+    transition: 1s;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#about{
+    width:90%;
+    margin:auto;
+    /* border:1px solid red;*/
+}
+.about-col{
+    flex-basis: 45%;
+}
+#about span{
+    font-size:1.5em;
+    color:rgb(16, 90, 49);
+}
+#about h2{
+    font-size: 2.5em;
+}
+#about p{
+    padding:20px 0px;
+}
+#about img{
+    width:100%;
+    height:95%;
+    border-radius: 10px;
+}
+#menu{
+    width:90%;
+    margin:auto;
+    /*border:2px solid red*/
+    text-align: center;
+}
+#menu span{
+    font-size:1.5em;
+    color:rgb(16, 90, 49);
+}
+#menu h2{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    padding:10px;
+}
+.menu-col{
+    flex-basis:30%;
+}
+#menu img{
+    width:100%;
+    height:95%;
+    border-radius: 10px;
+    justify-content:space-between;
+    border:2px solid rgb(105, 179, 115);
+}
+#menu img:hover{
+     box-shadow:5px 5px 10px rgb(165, 89, 180);
+     transition: 0s;
+}
+#menu h3{
+    text-transform: uppercase;   
+    font-size:1.5em;
+    color:brown;
+    padding:20px;
+}
+#experts{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    /*border:2px solid red;*/
+}
+#experts span{
+    font-size: 1.5em;
+    color:rgb(16, 90, 49);
+}
+#experts h2{
+    font-size:2.5em;
+    text-transform: capitalize;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+.experts-col{
+    flex-basis: 30%;
+}
+#experts img{
+    width:100%;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+#experts h3{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:brown;
+    padding-top: 20px;
+}
+#testimonials{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    /*border:2px solid red;*/
+}
+#testimonials span{
+    font-size: 1.5em;
+    color:rgb(16, 90, 49);
+}
+#testimonials h2{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.testimonial-col{
+    flex-basis:49%;
+    background:rgb(219, 221, 91);
+    border-radius: 10px;
+    box-shadow:5px 5px 10px rgb(228, 156, 14);
+}
+#testimonials img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#testimonials h3{
+    text-transform:uppercase;
+    font-size: 1.5em;
+    margin-top:20px;
+    color:brown;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right:6px;
+}
+#contact{
+    margin:auto;
+    width:90%;
+    /*border:2px solid red;*/
+    text-align:center;
+}
+#contact span{
+    font-size: 1.5em;
+    color:rgb(16, 90, 49);
+}
+#contact h2{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.contact-col{
+    flex-basis:1%;
+}
+#contact .fa{
+    color:brown;
+    font-size: 1.5em;
+}
+#contact .contact-text{
+    display:block;
+    color:brown;
+    font-size:1.2em;
+    padding:10px 0px;
+}
+input,textarea{
+    margin:10px 0px;
+    padding:10px 0px;
+    width:400px;
+    margin-right: 50px;
+    border:2px solid black;
+    box-shadow: 2px 2px 2px brown;
+}
+.btnsubmit{
+    text-transform:uppercase;
+    background:rgb(16, 90, 49);
+    padding:5px 15px;
+    color:rgb(200, 214, 118);
+    border:none;
+    cursor:pointer;
+    letter-spacing:2px;
+    border-radius:5px;
+}
+.btnsubmit:hover{
+    letter-spacing:5px;
+    transition:1s;
+}
+#footer{
+    width:100%;
+    text-align: center;
+    background:grey;
+    margin-top:30px;
+}
+#footer .icons .fa{
+    font-size: 1.2em;
+    color:rgb(24, 11, 61);
+    padding:3px;
+}
+#footer .icons{
+    padding-top:10px;
+}
+
+
+
+
+
+
+
+
